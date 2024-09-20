@@ -18,9 +18,8 @@ theme_vago_white <- function(base_colour="white",
   thm +
     ggplot2::theme(
       # Set colours
-      text=element_text(size = base_size, colour = text.colour),
+      text=element_text(size = base_size, colour = text_colour),
       plot.background = element_rect(fill=base_colour, colour=NA),
-      axis.line = element_line(colour=line_colour),
       axis.text = element_text(colour=text_colour)
     )
 

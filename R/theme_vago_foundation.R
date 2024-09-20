@@ -49,7 +49,6 @@ theme_vago_foundation <- function(base_size = 15, base_family = "Segoe UI") {
         element_text(
           size=rel(1),
           lineheight=.3,
-          vjust=1,
           margin = margin(0,0,0,0,"cm")),
       plot.caption = element_text(size=rel(1),hjust = 0),
       strip.text = element_text(size=rel(1)),
@@ -63,12 +62,14 @@ theme_vago_foundation <- function(base_size = 15, base_family = "Segoe UI") {
       axis.title.x =
         ggplot2::element_text(
           size=ggplot2::rel(1),
-          hjust = .9
+          hjust = .9,
+          face = "bold"
         ),
       axis.title.y =
         ggplot2::element_text(
           size=ggplot2::rel(1),
-          vjust = .9,
+          hjust = .9,
+          face = "bold",
           angle = 90,
         ),
       # Define foundation legend parameters

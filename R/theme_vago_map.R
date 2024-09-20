@@ -31,13 +31,13 @@ theme_vago_map <-
 
     .text_colour=switch(
       base_colour,
-      "white" = vagotheme::vago.darkblue,
-      "blue" = "white")
+      "white" = "black",
+      "lilac" = "white")
 
     .line_colour=switch(
       base_colour,
-      "white" = vagotheme::vago.darkblue,
-      "blue" = "white")
+      "white" = "black",
+      "lilac" = "white")
 
     thm +
       ggplot2::theme(
