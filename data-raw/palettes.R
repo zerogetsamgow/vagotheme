@@ -43,6 +43,10 @@ usethis::use_data(vago.amber, overwrite = TRUE)
 vago.lilac = pal_colour("#E3E3ED")
 usethis::use_data(vago.lilac, overwrite = TRUE)
 
+vago.grey = pal_colour("#BFBFBF")
+usethis::use_data(vago.grey, overwrite = TRUE)
+
+
 
 # Create
 vago_colours =
