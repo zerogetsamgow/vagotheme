@@ -32,32 +32,32 @@ theme_vago_foundation <- function(base_size = 15, base_family = "Noto Sans") {
       # Define cube_founcation text parameters
       # Define cube_founcation text parameters
       text =
-        element_text(
+        ggplot2::element_text(
           family=base_family
         ),
       plot.title =
-        element_text(
+        ggplot2::element_text(
           size=rel(1.2),
           face="bold",
           lineheight = 0.5,
           margin = margin(0, 0, 2, 0, "mm")
         ),
       plot.subtitle =
-        element_text(
+        ggplot2::element_text(
           size=rel(1),
           lineheight = 0.5,
           margin = margin(0, 0, 5, 0, "mm")
         ),
       legend.text =
-        element_text(
+        ggplot2::element_text(
           size=rel(1)),
       legend.title =
-        element_text(
+        ggplot2::element_text(
           size=rel(1),
           lineheight=.3,
           margin = margin(0,0,0,0,"cm")),
-      plot.caption = element_text(size=rel(1),hjust = 0),
-      strip.text = element_text(size=rel(1)),
+      plot.caption = ggplot2::element_text(size=rel(1),hjust = 0),
+      strip.text = ggplot2::element_text(size=rel(1)),
       # Define axis foundation parameters
       axis.line = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
@@ -81,7 +81,7 @@ theme_vago_foundation <- function(base_size = 15, base_family = "Noto Sans") {
       # Define foundation legend parameters
       legend.background = ggplot2::element_blank(),
       legend.key = ggplot2::element_blank(),
-      legend.key.size = unit(4,"mm"),
+      legend.key.size = ggplot2::unit(4,"mm"),
       legend.position = "bottom",
       legend.margin = ggplot2::margin(1, 1, 1, 1, "mm"),
       # Define foundation margin parameters

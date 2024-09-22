@@ -18,9 +18,9 @@ theme_vago_lilac <- function(base_colour=vago.lilac,
   thm +
     ggplot2::theme(
       # Set colours
-      text=element_text(size = base_size, colour = text_colour),
-      plot.background = element_rect(fill=base_colour, colour=NA),
-      axis.text = element_text(colour=text_colour)
+      text = ggplot2::element_text(size = base_size, colour = text_colour),
+      plot.background = ggplot2::element_rect(fill=base_colour, colour=NA),
+      axis.text = ggplot2::element_text(colour=text_colour)
     )
 
 }

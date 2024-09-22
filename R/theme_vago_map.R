@@ -27,7 +27,7 @@ theme_vago_map <-
     .base_colour = switch(
       base_colour,
       "white" = "white",
-      "lilac" = vagotheme::vago.lilac)
+      "lilac" = vago.lilac)
 
     .text_colour=switch(
       base_colour,
@@ -44,8 +44,8 @@ theme_vago_map <-
         # Clear background for clean charts
         rect = ggplot2::element_blank(),
         line = ggplot2::element_blank(),
-        panel.background = element_rect(colour="transparent",fill=.base_colour),
-        plot.background = element_rect(colour="transparent",fill=.base_colour),
+        panel.background = ggplot2::element_rect(colour="transparent",fill=.base_colour),
+        plot.background = ggplot2::element_rect(colour="transparent",fill=.base_colour),
         panel.border = ggplot2::element_blank(),
         # Define cube_founcation text parameters
         text =
@@ -62,19 +62,15 @@ theme_vago_map <-
             margin = margin(0, 0, 5, 0, "mm")
           ),
         # Define axis foundation parameters
-        # axis.line = ggplot2::element_blank(),
-        #  axis.ticks = ggplot2::element_blank(),
-        # axis.text = ggplot2::element_blank(),
-        # Define foundation legend parameters
         legend.background = ggplot2::element_blank(),
         legend.key = ggplot2::element_blank(),
-        legend.key.size = unit(4,"mm"),
+        legend.key.size = ggplot2::unit(4,"mm"),
         legend.position.inside = c(0,0),
         legend.title.position = "top",
         legend.direction = "horizontal",
         legend.margin = ggplot2::margin(1, 1, 1, 1, "mm"),
-        legend.title = element_text(family=base_family),
-        legend.text = element_text(family=base_family),
+        legend.title = ggplot2::element_text(family=base_family),
+        legend.text = ggplot2::element_text(family=base_family),
         # Define foundation margin parameters
         plot.margin = ggplot2::margin(1, 1, 1, 1, "mm"),
         # Define foundation title parameters
