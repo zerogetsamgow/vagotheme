@@ -1,6 +1,6 @@
 Package: vagotheme
 Title: VAGO Themes and Colour Palettes
-Version: 1.4.0
+Version: 2.0.0
 Authors@R: 
     person("Samuel", "Gow", , "samuel.gow@cubegroup.com.au", role = c("aut", "cre"))
 Description: A colour palette and ggplot2 themes that comply with the
@@ -15,10 +15,12 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Depends: 
-    palettes,
-    ggthemes,
-    showtext,
-    strayr,
-    systemfonts,
     R (>= 2.10)
 LazyData: true
+Imports: 
+    ggplot2,
+    ggthemes,
+    palettes,
+    showtext,
+    strayr,
+    sysfonts
