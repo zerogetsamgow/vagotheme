@@ -20,7 +20,7 @@ This theme is designed to be be used when creating maps.
 }
 \details{
 This theme takes \code{\link[ggthemes]{theme_map}()} and sets
-base text family and size to \verb{Segoe UI} and \code{15}.
+base text family and size to \verb{Noto Sans} and \code{15}.
 }
 \seealso{
 Other vagothemes: 

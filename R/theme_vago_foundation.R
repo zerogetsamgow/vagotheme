@@ -8,7 +8,7 @@
 #' because those themes define elements deep in the hierarchy.
 #'
 #' This theme takes \code{\link[ggthemes]{theme_foundations}()} and sets
-#' base text family and size to `Helvetica neue` and `15`.
+#' base text family and size to `Noto Sans` and `15`.
 #'
 #' @inheritParams ggthemes::theme_foundation
 #'

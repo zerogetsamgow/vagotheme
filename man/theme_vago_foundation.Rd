@@ -21,7 +21,7 @@ because those themes define elements deep in the hierarchy.
 }
 \details{
 This theme takes \code{\link[ggthemes]{theme_foundations}()} and sets
-base text family and size to \verb{Helvetica neue} and \code{15}.
+base text family and size to \verb{Noto Sans} and \code{15}.
 }
 \seealso{
 Other vagotheme: 

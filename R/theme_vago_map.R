@@ -3,7 +3,7 @@
 #' This theme is designed to be be used when creating maps.
 #'
 #' This theme takes \code{\link[ggthemes]{theme_map}()} and sets
-#' base text family and size to `Segoe UI` and `15`.
+#' base text family and size to `Noto Sans` and `15`.
 #'
 #' @inheritParams ggthemes::theme_foundation
 #'
