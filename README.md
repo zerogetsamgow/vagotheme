@@ -144,7 +144,7 @@ car_accidents =
 ## basic example of a column plot
 ggplot(data=car_accidents,aes(x=year, y = accidents)) +
   geom_col(fill = vago.blue) +
-  geom_text(aes(label = accidents), size = 5, nudge_y = 1)+
+  geom_text(aes(label = accidents), size = 5, nudge_y = 1.5)+
   scale_x_continuous(name = NULL, breaks = 2020:2024)+
   scale_y_continuous(name = NULL, labels = NULL,  expand = c(0,0,.1,.1))+
   labs(title="Simple column charts",
@@ -630,8 +630,8 @@ ggplot(
   labs(title="Two colours",
        subtitle = "Highlighting difference")+
   theme_vago_white()
-#> Warning in geom_segment(data = tibble(x = 2021.5, xend = 2021.5,
-#> y = 60, : Ignoring unknown parameters: `fill`
+#> Warning in geom_segment(data = tibble(x = 2021.5, xend = 2021.5, y = 60, :
+#> Ignoring unknown parameters: `fill`
 ```
 
 <img src="man/figures/README-multi_line_multi_colour_comparison-1.png" width="100%" />
@@ -680,7 +680,7 @@ ggplot(
   geom_sf() +
   scale_fill_manual(guide='none',values=vago.blue) +
   theme_vago_map(base_colour = "lilac", base_size = 10)
-#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\Rtmp4wWuww
+#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\RtmpqYF1uV
 ```
 
 <img src="man/figures/README-map_blue-1.png" width="100%" />

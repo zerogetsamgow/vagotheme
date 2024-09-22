@@ -142,7 +142,7 @@ car_accidents =
 ## basic example of a column plot
 ggplot(data=car_accidents,aes(x=year, y = accidents)) +
   geom_col(fill = vago.blue) +
-  geom_text(aes(label = accidents), size = 5, nudge_y = 1)+
+  geom_text(aes(label = accidents), size = 5, nudge_y = 1.5)+
   scale_x_continuous(name = NULL, breaks = 2020:2024)+
   scale_y_continuous(name = NULL, labels = NULL,  expand = c(0,0,.1,.1))+
   labs(title="Simple column charts",
