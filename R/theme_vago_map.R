@@ -16,7 +16,7 @@ theme_vago_map <-
   function(
     base_colour = c("white","lilac"),
     base_size = 15,
-    base_family = "Segoe UI") {
+    base_family = "Noto Sans") {
 
 
 

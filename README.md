@@ -58,6 +58,11 @@ the order in the Windows theme.
 
 <img src="man/figures/README-theme-1.png" width="120px" height="30px" />
 
+## Fonts
+
+vagotheme uses the `Noto Sans` font from `sysfonts::font_add_google`
+instead of Segoe UI due to easier installation.
+
 ## Chart
 
 vago’s chart colours `vago_colours$chart`is a palette of four colours
@@ -631,8 +636,8 @@ ggplot(
   labs(title="Two colours",
        subtitle = "Highlighting difference")+
   theme_vago_white()
-#> Warning in geom_segment(data = tibble(x = 2021.5, xend = 2021.5, y = 60, :
-#> Ignoring unknown parameters: `fill`
+#> Warning in geom_segment(data = tibble(x = 2021.5, xend = 2021.5,
+#> y = 60, : Ignoring unknown parameters: `fill`
 ```
 
 <img src="man/figures/README-multi_line_multi_colour_comparison-1.png" width="100%" />
@@ -681,7 +686,7 @@ ggplot(
   geom_sf() +
   scale_fill_manual(guide='none',values=vago.blue) +
   theme_vago_map(base_colour = "lilac", base_size = 10)
-#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\RtmpGmrFEd
+#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\Rtmpw59uTn
 ```
 
 <img src="man/figures/README-map_blue-1.png" width="100%" />

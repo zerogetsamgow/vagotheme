@@ -61,6 +61,10 @@ vago's theme colours `vago_colours$theme` reorders the colours to match the orde
 plot(vago_colours$theme)
 ```
 
+## Fonts
+
+vagotheme uses the `Noto Sans` font from `sysfonts::font_add_google` instead of Segoe UI due to easier installation.
+
 ## Chart
 
 vago's chart colours `vago_colours$chart`is a palette of four colours that is the primary palette for charts .

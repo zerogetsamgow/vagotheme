@@ -4,7 +4,7 @@
 \alias{theme_vago_foundation}
 \title{VAGO Foundation Theme}
 \usage{
-theme_vago_foundation(base_size = 15, base_family = "Segoe UI")
+theme_vago_foundation(base_size = 15, base_family = "Noto Sans")
 }
 \arguments{
 \item{base_size}{base font size, given in pts.}

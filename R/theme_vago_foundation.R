@@ -17,7 +17,7 @@
 #' @importFrom ggplot2 theme
 #' @importFrom ggthemes theme_foundation
 
-theme_vago_foundation <- function(base_size = 15, base_family = "Segoe UI") {
+theme_vago_foundation <- function(base_size = 15, base_family = "Noto Sans") {
   install_vago_fonts()
   showtext::showtext_auto()
   thm <- ggthemes::theme_foundation(base_size = base_size, base_family = base_family)
