@@ -6,10 +6,11 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The main purpose of vagotheme is to enable R users in Australian public
-policy to use the colours and styles defined in the Victoria Auditor
-General’s Office’s style guide to create compliant visualisations in
-ggplot.
+The main purpose of vagotheme is to enable R users to use the colours
+and styles defined in the Victoria Auditor General’s Office’s style
+guide to create compliant visualisations in ggplot.
+
+*This package is not endorsed by VAGO*.
 
 vagotheme was created with the **palettes** package, which provides a
 comprehensive library for colour vectors and colour palettes using a new
@@ -680,7 +681,7 @@ ggplot(
   geom_sf() +
   scale_fill_manual(guide='none',values=vago.blue) +
   theme_vago_map(base_colour = "lilac", base_size = 10)
-#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\RtmpqYF1uV
+#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\RtmpGmrFEd
 ```
 
 <img src="man/figures/README-map_blue-1.png" width="100%" />

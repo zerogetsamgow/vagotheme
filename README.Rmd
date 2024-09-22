@@ -18,7 +18,9 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The main purpose of vagotheme is to enable R users in Australian public policy to use the colours and styles defined in the Victoria Auditor General's Office's style guide to create compliant visualisations in ggplot.
+The main purpose of vagotheme is to enable R users to use the colours and styles defined in the Victoria Auditor General's Office's style guide to create compliant visualisations in ggplot.
+
+*This package is not endorsed by VAGO*.
 
 vagotheme was created with the **palettes** package, which provides a comprehensive library for colour vectors and colour palettes using a new family of colour classes (`palettes_colour`, and `palettes_palette`) that always print as hex codes with colour previews. Colour palette packages created with palettes have access to the following capabilities, all without requiring you to write any code: formatting, casting and coercion, extraction and updating of components, plotting, colour mixing arithmetic, and colour interpolation. 
 
