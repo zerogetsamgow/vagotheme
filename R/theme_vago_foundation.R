@@ -39,13 +39,13 @@ theme_vago_foundation <- function(base_size = 15, base_family = "Noto Sans") {
         ggplot2::element_text(
           size=rel(1.2),
           face="bold",
-          lineheight = 0.5,
+          lineheight = 0.9,
           margin = margin(0, 0, 2, 0, "mm")
         ),
       plot.subtitle =
         ggplot2::element_text(
           size=rel(1),
-          lineheight = 0.5,
+          lineheight = 0.9,
           margin = margin(0, 0, 5, 0, "mm")
         ),
       legend.text =

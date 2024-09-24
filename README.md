@@ -47,35 +47,31 @@ devtools::install_github("zerogetsamgow/vagotheme")
 
 vagotheme’s base colour palette `vago_colours$base` comprises 7 colours.
 
-    #> Loading required package: palettes
+<img src="man/figures/README-base-1.png" width="700px" height="400px" />
 
-<img src="man/figures/README-base-1.png" width="120px" height="30px" />
-
-## Theme colours
+### Theme colours
 
 vago’s theme colours `vago_colours$theme` reorders the colours to match
 the order in the Windows theme.
 
-<img src="man/figures/README-theme-1.png" width="120px" height="30px" />
+<img src="man/figures/README-theme-1.png" width="700px" height="400px" />
 
-## Fonts
-
-vagotheme uses the `Noto Sans` font from `sysfonts::font_add_google`
-instead of Segoe UI due to easier installation.
-
-## Chart
+### Chart
 
 vago’s chart colours `vago_colours$chart`is a palette of four colours
 that is the primary palette for charts .
 
-<img src="man/figures/README-chart-1.png" width="120px" height="30px" />
+<img src="man/figures/README-chart-1.png" width="700px" height="400px" />
 
-## Other
+### Other
 
-Additional non palette colours `vago.lilac` and `vago.grey` are included
-to use as background colours.
+An additional non palette colours `vago.lilac` is included to use as a
+background colour.
 
-<img src="man/figures/README-lilac-1.png" width="120px" height="30px" />
+## Fonts
+
+vagotheme uses the `Noto Sans` font from `sysfonts::font_add_google()`
+instead of the Windows Font `Segoe UI` to enable easier installation.
 
 ## Installation
 
@@ -103,7 +99,7 @@ ggplot2::ggplot(data=iris,aes(x=Sepal.Length, y = Petal.Length,colour=Species)) 
   theme_vago_white()
 ```
 
-<img src="man/figures/README-white_example-1.png" width="100%" />
+<img src="man/figures/README-white_example-1.png" width="700px" height="400px" />
 
 {vagotheme} exports two themes - `theme_vago_white()`(seen above) and
 `theme_vago_lilac()` to enable plots to be produced for any VAGO
@@ -120,7 +116,7 @@ ggplot(data=iris,aes(x=Sepal.Length, y = Petal.Length,colour=Species)) +
   theme_vago_lilac()
 ```
 
-<img src="man/figures/README-lilac_example-1.png" width="100%" />
+<img src="man/figures/README-lilac_example-1.png" width="700px" height="400px" />
 
 As well as utilising vago colour these themes are rendered using the
 `Segoe UI` font.
@@ -154,11 +150,15 @@ ggplot(data=car_accidents,aes(x=year, y = accidents)) +
   scale_x_continuous(name = NULL, breaks = 2020:2024)+
   scale_y_continuous(name = NULL, labels = NULL,  expand = c(0,0,.1,.1))+
   labs(title="Simple column charts",
-       subtitle ="One-dimensional column chart: one colour, single axis, y-axis can be replaced by data label")+
+       subtitle = 
+         str_wrap(
+           "One-dimensional column chart: one colour, single axis, y-axis can be replaced by data label",
+       70)
+       )+
   theme_vago_white()
 ```
 
-<img src="man/figures/README-col_example-1.png" width="100%" />
+<img src="man/figures/README-col_example-1.png" width="700px" height="400px" />
 
 ``` r
 # Create tibble of data for examples
@@ -181,11 +181,14 @@ ggplot(data=car_accidents,aes(x=month, y = accidents, fill = freeway)) +
   scale_y_continuous(name = NULL, expand = c(0,0))+
   scale_fill_manual(name = NULL, values = vago_colours$chart)+
   labs(title="Two-dimensional histogram: full colour",
-       subtitle ="If you have more than 4 categories, please consider using different method to present.")+
+       subtitle =
+         str_wrap(
+           "If you have more than 4 categories, please consider using different method to present.",
+           70))+
   theme_vago_white()
 ```
 
-<img src="man/figures/README-col_example_full_colour-1.png" width="100%" />
+<img src="man/figures/README-col_example_full_colour-1.png" width="700px" height="400px" />
 
 ``` r
 ## example of single colour column plot
@@ -197,11 +200,14 @@ ggplot(
   scale_y_continuous(name = NULL, expand = c(0,0), limits = c(0,51))+
   scale_fill_manual(name = NULL, values = c(rep(vago.grey,3), vago.blue))+
   labs(title="Two-dimensional histogram: single series highlight",
-       subtitle ="If you want to highlight one category and de-emphasise the remaining ones")+
+       subtitle = str_wrap(
+         "If you want to highlight one category and de-emphasise the remaining ones",
+         70)
+       )+
   theme_vago_white()
 ```
 
-<img src="man/figures/README-col_example_single_colour-1.png" width="100%" />
+<img src="man/figures/README-col_example_single_colour-1.png" width="700px" height="400px" />
 
 ``` r
 ## example of multi colour stacked column plot
@@ -221,11 +227,15 @@ ggplot(
   scale_fill_manual(name = NULL, values = rev(vago_colours$chart))+
   scale_colour_manual(guide = "none", name = NULL, values = c("black","black","black","white"))+
   labs(title="Stacked column chart: full colour",
-       subtitle ="Effective for illustrating how individual parts contribute to a whole.")+
+       subtitle = 
+         str_wrap(
+           "Effective for illustrating how individual parts contribute to a whole.",
+           70)
+       )+
   theme_vago_white()
 ```
 
-<img src="man/figures/README-stack_col_example_full_colour-1.png" width="100%" />
+<img src="man/figures/README-stack_col_example_full_colour-1.png" width="700px" height="400px" />
 
 ``` r
 ## example of single colour column plot
@@ -243,11 +253,15 @@ ggplot(data=car_accidents,
   scale_fill_manual(name = NULL, values = c(rep(vago.grey,3), vago.blue))+
   scale_colour_manual(guide = "none", name = NULL, values = c("black","black","black","white"))+
   labs(title="Stacked column chart: 2 colours, single series highlight",
-       subtitle ="If you want to highlight one category and de-emphasise the remaining ones.")+
+       subtitle = 
+         str_wrap(
+           "If you want to highlight one category and de-emphasise the remaining ones.",
+           70)
+       )+
   theme_vago_white()
 ```
 
-<img src="man/figures/README-stack_col_example_single_colour-1.png" width="100%" />
+<img src="man/figures/README-stack_col_example_single_colour-1.png" width="700px" height="400px" />
 
 ``` r
 # Add shares to data
@@ -270,7 +284,7 @@ ggplot(data=car_accidents,aes(x=month, y = share, fill = fct_rev(freeway), label
   theme_vago_white()
 ```
 
-<img src="man/figures/README-stack_col_example_share-1.png" width="100%" />
+<img src="man/figures/README-stack_col_example_share-1.png" width="700px" height="400px" />
 
 ``` r
 # Create data tibble to add forecaast variable
@@ -308,7 +322,7 @@ ggplot(
   theme_vago_white()
 ```
 
-<img src="man/figures/README-stack_col_example_forecast-1.png" width="100%" />
+<img src="man/figures/README-stack_col_example_forecast-1.png" width="700px" height="400px" />
 
 ### Bar charts
 
@@ -349,7 +363,7 @@ ggplot(
   theme_vago_white()
 ```
 
-<img src="man/figures/README-bar_example-1.png" width="100%" />
+<img src="man/figures/README-bar_example-1.png" width="700px" height="400px" />
 
 ``` r
 
@@ -397,11 +411,15 @@ ggplot(
     values = c("black","black","white","white"))+
   labs(
     title="Stacked bar chart: full colour",
-    subtitle = "Use to show how each category contributes to the total and what percentage each represents.")+
+    subtitle = 
+      str_wrap(
+        "Use to show how each category contributes to the total and what percentage each represents.",
+        70)
+    )+
   theme_vago_white()
 ```
 
-<img src="man/figures/README-bar_stacked_example-1.png" width="100%" />
+<img src="man/figures/README-bar_stacked_example-1.png" width="700px" height="400px" />
 
 ### Line charts
 
@@ -456,7 +474,7 @@ ggplot(
   )+
   geom_point()+
   geom_line() +
-  scale_x_continuous(name = NULL, breaks = 2020:2024)+
+  scale_x_continuous(name = NULL, breaks = 2020:2024, limits = c(2020,2024.4))+
   scale_y_continuous(name = NULL, expand = c(0,0), limits = c(0,410), breaks = seq(0,400, by = 100))+
   scale_fill_manual(name = NULL, guide = "none", values = (vago_colours$chart))+
   scale_colour_manual(name = NULL,guide = "none",  values = (vago_colours$chart))+
@@ -465,7 +483,7 @@ ggplot(
   theme_vago_white()
 ```
 
-<img src="man/figures/README-single_line_example-1.png" width="100%" />
+<img src="man/figures/README-single_line_example-1.png" width="700px" height="400px" />
 
 ``` r
 ## example plot
@@ -483,7 +501,7 @@ ggplot(
   geom_text(
     data =  line_data |> filter(str_detect(council, "A|B"), year == max(year)),
     aes(label = council), nudge_y = 10) +
-  scale_x_continuous(name = NULL, breaks = 2020:2024.3)+
+  scale_x_continuous(name = NULL, breaks = 2020:2024, limits = c(2020, 2024.4))+
   scale_y_continuous(name = NULL, expand = c(0,0), limits = c(0,510), breaks = seq(0,500, by = 100))+
   scale_fill_manual(name = NULL, guide = "none", values = (vago_colours$chart))+
   scale_colour_manual(name = NULL,guide = "none",  values = (vago_colours$chart))+
@@ -492,7 +510,7 @@ ggplot(
   theme_vago_white()
 ```
 
-<img src="man/figures/README-multi_line_example-1.png" width="100%" />
+<img src="man/figures/README-multi_line_example-1.png" width="700px" height="400px" />
 
 ``` r
 ## example plot
@@ -521,7 +539,7 @@ ggplot(
     size = 5,
     hjust = 0, 
     nudge_x = .05) +
-  scale_x_continuous(name = NULL, breaks = 2020:2024, limits = c(2020,2024.3))+
+  scale_x_continuous(name = NULL, breaks = 2020:2024, limits = c(2020,2024.4))+
   scale_y_continuous(
     name = NULL, expand = c(0,0), 
     limits = c(0,510), breaks = seq(0,500, by = 100))+
@@ -532,7 +550,7 @@ ggplot(
   theme_vago_white()
 ```
 
-<img src="man/figures/README-target_line_example-1.png" width="100%" />
+<img src="man/figures/README-target_line_example-1.png" width="700px" height="400px" />
 
 ``` r
 ## example plot
@@ -553,16 +571,26 @@ ggplot(
   geom_text(
     data =  line_data |> filter(str_detect(council, "A"), year == max(year)),
     aes(label = council), nudge_y = 10) +
-  scale_x_continuous(name = NULL, breaks = 2020:2024)+
+  scale_x_continuous(name = NULL, breaks = 2020:2024, limits = c(2020,2020.4))+
   scale_y_continuous(name = NULL, expand = c(0,0), limits = c(0,510), breaks = seq(0,500, by = 100))+
   scale_fill_manual(name = NULL, guide = "none", values = (vago_colours$chart))+
   scale_colour_manual(name = NULL,guide = "none",  values = (vago_colours$chart))+
   labs(title="Multiple lines",
        subtitle = "One colour")+
   theme_vago_white()
+#> Warning: Removed 12 rows containing missing values or values outside the scale range
+#> (`geom_line()`).
+#> `geom_line()`: Each group consists of only one observation.
+#> ℹ Do you need to adjust the group aesthetic?
+#> Warning: Removed 4 rows containing missing values or values outside the scale range
+#> (`geom_line()`).
+#> `geom_line()`: Each group consists of only one observation.
+#> ℹ Do you need to adjust the group aesthetic?
+#> Warning: Removed 1 row containing missing values or values outside the scale range
+#> (`geom_text()`).
 ```
 
-<img src="man/figures/README-multi_line_one_colour_example-1.png" width="100%" />
+<img src="man/figures/README-multi_line_one_colour_example-1.png" width="700px" height="400px" />
 
 ``` r
 ## example plot
@@ -583,7 +611,7 @@ ggplot(
   ggrepel::geom_text_repel(
     data =  line_data |> filter(str_detect(council, "A|D"), year == max(year)),
     aes(label = council), direction = "y", force = 40, min.segment.length = 20) +
-  scale_x_continuous(name = NULL, breaks = 2020:2024)+
+  scale_x_continuous(name = NULL, breaks = 2020:2024, limits = c(2020,2024.4))+
   scale_y_continuous(name = NULL, expand = c(0,0), limits = c(0,510), breaks = seq(0,500, by = 100))+
   scale_fill_manual(name = NULL, guide = "none", values = (vago_colours$chart))+
   scale_colour_manual(name = NULL,guide = "none",  values = (vago_colours$chart))+
@@ -592,7 +620,7 @@ ggplot(
   theme_vago_white()
 ```
 
-<img src="man/figures/README-multi_line_multi_colour_example-1.png" width="100%" />
+<img src="man/figures/README-multi_line_multi_colour_example-1.png" width="700px" height="400px" />
 
 ``` r
 comparison_data =
@@ -622,22 +650,22 @@ ggplot(
     data =  comparison_data |> filter(year == max(year)),
     aes(label = type, colour = type), direction = "y", size = 5,
     force = 40, min.segment.length = 20) +
-  scale_x_continuous(name = NULL, breaks = 2016:2024)+
+  scale_x_continuous(name = NULL, breaks = 2016:2024, limits = c(2016, 2024.4))+
   geom_segment(data = tibble(x = 2021.5, xend = 2021.5, y = 60, yend = 170, type = NA), 
                aes(x = x, y = y, xend = xend, yend=yend), colour = vago.grey, fill = NA)+
   annotate(geom = "text", size = 5, hjust = 0, label = "Difference = net cost", x = 2021.7, y = 115)+
   scale_y_continuous(
     name = "$ million", 
     expand = c(0,0), 
-    limits = c(0,260), 
+    limits = c(0,250), 
     breaks = seq(0,500, by = 50))+
   scale_fill_manual(name = NULL, guide = "none", values = (vago_colours$chart))+
   scale_colour_manual(name = NULL,guide = "none",  values = (vago_colours$chart))+
   labs(title="Two colours",
        subtitle = "Highlighting difference")+
   theme_vago_white()
-#> Warning in geom_segment(data = tibble(x = 2021.5, xend = 2021.5,
-#> y = 60, : Ignoring unknown parameters: `fill`
+#> Warning in geom_segment(data = tibble(x = 2021.5, xend = 2021.5, y = 60, :
+#> Ignoring unknown parameters: `fill`
 ```
 
 <img src="man/figures/README-multi_line_multi_colour_comparison-1.png" width="100%" />
@@ -667,7 +695,7 @@ ggplot(
   theme_vago_map(base_colour = "white", base_size = 10)
 ```
 
-<img src="man/figures/README-map_lilac-1.png" width="100%" />
+<img src="man/figures/README-map_white-1.png" width="700px" height="400px" />
 
 ``` r
 
@@ -686,10 +714,10 @@ ggplot(
   geom_sf() +
   scale_fill_manual(guide='none',values=vago.blue) +
   theme_vago_map(base_colour = "lilac", base_size = 10)
-#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\Rtmpw59uTn
+#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\Rtmpozi2ke
 ```
 
-<img src="man/figures/README-map_blue-1.png" width="100%" />
+<img src="man/figures/README-map_lilac-1.png" width="700px" height="400px" />
 
 ## Documentation
 
