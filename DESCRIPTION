@@ -18,6 +18,7 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Imports: 
+    curl,
     ggplot2,
     ggthemes,
     palettes,

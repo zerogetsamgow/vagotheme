@@ -17,7 +17,7 @@ vago.darkteal = pal_colour("#208888")
 usethis::use_data(vago.darkteal, overwrite = TRUE)
 
 vago.lightteal = pal_colour("#A3E9E9")
-usethis::use_data(vago.darkteal, overwrite = TRUE)
+usethis::use_data(vago.lightteal, overwrite = TRUE)
 
 vago.green = pal_colour("#00A86B")
 usethis::use_data(vago.green, overwrite = TRUE)

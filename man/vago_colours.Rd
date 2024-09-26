@@ -7,8 +7,8 @@
 \format{
 \subsection{\code{vago_colours}}{
 
-An object of class \code{palette} with 8 colours.
-Use \code{names(vago_colours)} to return all colour names.
+An object of class \code{palette} with 4 palettes.
+Use \code{names(vago_colours)} to return all palette names.
 }
 }
 \source{

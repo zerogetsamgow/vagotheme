@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{vago.blue}}{
 
-An object of class \code{colour}.
+An object of class \code{colour} with hex value \verb{#054894}.
 }
 }
 \source{
@@ -17,7 +17,8 @@ An object of class \code{colour}.
 vago.blue
 }
 \description{
-Blue is used in majority
+VAGO Blue is the primary colour.
+VAGO Blue is a base and theme colour.
 }
 \examples{
 plot(vago.blue)
