@@ -17,6 +17,6 @@ vago.red
 VAGO Red is a base, theme and traffic colour.
 }
 \examples{
-plot(vago.red)
+barplot(c(2,5,3), col=rep(vago.red,3))
 }
 \keyword{datasets}

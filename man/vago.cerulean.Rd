@@ -17,6 +17,6 @@ vago.cerulean
 VAGO Cerulean is a base and theme colour.
 }
 \examples{
-plot(vago.cerulean)
+barplot(c(2,5,3), col=rep(vago.cerulean,3))
 }
 \keyword{datasets}

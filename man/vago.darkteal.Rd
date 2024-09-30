@@ -18,6 +18,6 @@ VAGO Dark Teal is a darker shade of the Secondary colour
 VAGO Dark Teal is a base, theme and chart colour.
 }
 \examples{
-plot(vago.darkteal)
+barplot(c(2,5,3), col=rep(vago.darkteal,3))
 }
 \keyword{datasets}

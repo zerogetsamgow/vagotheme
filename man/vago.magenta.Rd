@@ -17,6 +17,6 @@ vago.magenta
 VAGO Magenta is a base and theme colour.
 }
 \examples{
-plot(vago.magenta)
+barplot(c(2,5,3), col=rep(vago.magenta,3))
 }
 \keyword{datasets}

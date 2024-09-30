@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_vago_lilac.R
 \name{theme_vago_lilac}
 \alias{theme_vago_lilac}
-\title{background colour to lilac and text colours to black.}
+\title{A ggplot2 theme with background colour lilac and text colours to black.}
 \usage{
 theme_vago_lilac(
   base_colour = vago.lilac,

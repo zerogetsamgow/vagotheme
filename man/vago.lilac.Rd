@@ -17,6 +17,6 @@ vago.lilac
 VAGO Lilac is a background colour.
 }
 \examples{
-plot(vago.lilac)
+barplot(c(2,5,3), col=rep(vago.lilac,3))
 }
 \keyword{datasets}

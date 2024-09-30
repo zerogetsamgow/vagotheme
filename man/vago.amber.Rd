@@ -17,6 +17,6 @@ vago.amber
 VAGO Amber is a traffic colour.
 }
 \examples{
-plot(vago.amber)
+barplot(c(2,5,3), col=rep(vago.amber,3))
 }
 \keyword{datasets}

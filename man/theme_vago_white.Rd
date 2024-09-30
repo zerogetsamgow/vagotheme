@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_vago_white.R
 \name{theme_vago_white}
 \alias{theme_vago_white}
-\title{background colour to white and text colours to black.}
+\title{A ggplot2 theme with background colour white and text colours to black.}
 \usage{
 theme_vago_white(base_colour = "white", base_size = 15, text_colour = "black")
 }

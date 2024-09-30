@@ -18,6 +18,6 @@ VAGO Light Teal is a lighter shade of the Secondary colour
 VAGO Light teal is a base, theme and chart colour.
 }
 \examples{
-plot(vago.lightteal)
+barplot(c(2,5,3), col=rep(vago.lightteal,3))
 }
 \keyword{datasets}

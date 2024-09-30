@@ -1,4 +1,4 @@
-#' background colour to lilac and text colours to black.
+#' A ggplot2 theme with background colour lilac and text colours to black.
 #'
 #' Colours are sourced from `vagotheme` and are vago style guide compliant.
 #'

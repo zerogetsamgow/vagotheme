@@ -1,4 +1,4 @@
-#' background colour to white and text colours to black.
+#' A ggplot2 theme with background colour white and text colours to black.
 #'
 #' Colours are sourced from `vagotheme` and are vago style guide compliant.
 #'
@@ -9,9 +9,9 @@
 #' @importFrom ggplot2 element_rect
 
 
-theme_vago_white <- function(base_colour="white",
-                             base_size=15,
-                             text_colour="black") {
+theme_vago_white <- function(base_colour = "white",
+                             base_size = 15,
+                             text_colour = "black") {
 
   thm <- vagotheme::theme_vago_foundation()
 

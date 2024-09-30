@@ -37,43 +37,48 @@ theme_vago_foundation <- function(base_size = 15, base_family = "Noto Sans") {
         ),
       plot.title =
         ggplot2::element_text(
-          size=rel(1.2),
-          face="bold",
+          size = ggplot2::rel(1.2),
+          face = "bold",
           lineheight = 0.9,
-          margin = margin(0, 0, 2, 0, "mm")
+          margin = ggplot2::margin(0, 0, 2, 0, "mm")
         ),
       plot.subtitle =
         ggplot2::element_text(
-          size=rel(1),
+          size = ggplot2::rel(1),
           lineheight = 0.9,
-          margin = margin(0, 0, 5, 0, "mm")
+          margin = ggplot2::margin(0, 0, 5, 0, "mm")
         ),
       legend.text =
         ggplot2::element_text(
-          size=rel(1)),
+          size = ggplot2::rel(1)),
       legend.title =
         ggplot2::element_text(
-          size=rel(1),
-          lineheight=.3,
-          margin = margin(0,0,0,0,"cm")),
-      plot.caption = ggplot2::element_text(size=rel(1),hjust = 0),
-      strip.text = ggplot2::element_text(size=rel(1)),
+          size = ggplot2::rel(1),
+          lineheight = .3,
+          margin = ggplot2::margin(0,0,0,0,"cm")),
+      plot.caption =
+        ggplot2::element_text(
+          size = ggplot2::rel(1),
+          hjust = 0),
+      strip.text =
+        ggplot2::element_text(
+          size = ggplot2::rel(1)),
       # Define axis foundation parameters
       axis.line = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
       axis.text =
         ggplot2::element_text(
-          size=ggplot2::rel(1)
+          size = ggplot2::rel(1)
         ),
       axis.title.x =
         ggplot2::element_text(
-          size=ggplot2::rel(1),
+          size = ggplot2::rel(1),
           hjust = .9,
           face = "bold"
         ),
       axis.title.y =
         ggplot2::element_text(
-          size=ggplot2::rel(1),
+          size = ggplot2::rel(1),
           hjust = .9,
           face = "bold",
           angle = 90,

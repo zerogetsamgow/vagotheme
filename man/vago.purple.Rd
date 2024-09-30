@@ -17,6 +17,6 @@ vago.purple
 VAGO Purle is a base and theme colour.
 }
 \examples{
-plot(vago.purple)
+barplot(c(2,5,3), col=rep(vago.purple,3))
 }
 \keyword{datasets}

@@ -21,7 +21,7 @@ VAGO Dark blue is a darker shade of the primary colour
 VAGO Dark blue is a chart colour.
 }
 \examples{
-plot(vago.darkblue)
+barplot(c(2,5,3), col=rep(vago.darkblue,3))
 }
 \seealso{
 \code{\link[=pal_colour]{pal_colour()}}

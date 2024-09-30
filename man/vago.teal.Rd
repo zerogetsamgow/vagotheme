@@ -21,7 +21,7 @@ Teal is the secondary colour.
 VAGO teal is a base, theme and chart colour.
 }
 \examples{
-plot(vago.teal)
+barplot(c(2,5,3), col=rep(vago.teal,3))
 }
 \seealso{
 \code{\link[=pal_colour]{pal_colour()}}

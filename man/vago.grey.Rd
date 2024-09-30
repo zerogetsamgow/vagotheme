@@ -17,6 +17,6 @@ vago.grey
 VAGO Lilac is a chart colour.
 }
 \examples{
-plot(vago.grey)
+barplot(c(2,5,3), col=rep(vago.grey,3))
 }
 \keyword{datasets}

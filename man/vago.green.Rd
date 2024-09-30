@@ -17,6 +17,6 @@ vago.green
 VAGO Green is a base, theme and traffic colour.
 }
 \examples{
-plot(vago.green)
+barplot(c(2,5,3), col=rep(vago.green,3))
 }
 \keyword{datasets}
