@@ -10,7 +10,7 @@
 #' @importFrom sysfonts font_add
 #' @importFrom showtext showtext_auto
 
-install_vago_fonts <- function(font.path="C:/windows/fonts") {
+install_vago_fonts <- function() {
   # Add fonts
   sysfonts::font_add_google("Noto Sans")
   # Tell R to render text using showtext by calling the showtext_auto() function
