@@ -714,7 +714,7 @@ ggplot(
   geom_sf() +
   scale_fill_manual(guide='none',values=vago.blue) +
   theme_vago_map(base_colour = "lilac", base_size = 10)
-#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\Rtmp2Pibwz
+#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\Rtmpoz0Dos
 ```
 
 <img src="man/figures/README-map_lilac-1.png" width="700px" height="400px" />
