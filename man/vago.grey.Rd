@@ -10,6 +10,9 @@
 An object of class \code{colour} with hex value \verb{#BFBFBF}.
 }
 }
+\source{
+\url{https://github.com/zerogetsamgow/vagotheme}
+}
 \usage{
 vago.grey
 }

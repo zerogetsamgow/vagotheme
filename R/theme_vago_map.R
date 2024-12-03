@@ -5,7 +5,12 @@
 #' This theme takes \code{\link[ggthemes]{theme_map}()} and sets
 #' base text family and size to `Noto Sans` and `15`.
 #'
-#' @inheritParams ggthemes::theme_foundation
+#' @param base_colour a (character) string with options of "white" and "lilac"
+#'
+#' @param base_size a numeric with default 15
+#'
+#' @param base_family a (character) string with default "Noto Sans"
+#'
 #'
 #' @family vagothemes
 #' @export
@@ -22,22 +27,18 @@ theme_vago_map <-
 
     thm <- ggthemes::theme_map(base_size = base_size, base_family = base_family)
 
-    if(is.null(base_colour)) {base_colour="white"}
-    if(length(base_colour)>1) {base_colour="white"}
+    if(is.null(base_colour)) {base_colour = "white"}
+    if(length(base_colour)>1) {base_colour = "white"}
     .base_colour = switch(
       base_colour,
-      "white" = "white",
-      "lilac" = vago.lilac)
+      "white" = vagotheme::vago.white,
+      "lilac" = vagotheme::vago.lilac)
 
     .text_colour=switch(
       base_colour,
       "white" = "black",
-      "lilac" = "white")
+      "lilac" = "black")
 
-    .line_colour=switch(
-      base_colour,
-      "white" = "black",
-      "lilac" = "white")
 
     thm +
       ggplot2::theme(
@@ -59,7 +60,7 @@ theme_vago_map <-
             size=ggplot2::rel(1.2),
             face="bold",
             lineheight = 0.5,
-            margin = margin(0, 0, 5, 0, "mm")
+            margin = ggplot2::margin(0, 0, 5, 0, "mm")
           ),
         # Define axis foundation parameters
         legend.background = ggplot2::element_blank(),

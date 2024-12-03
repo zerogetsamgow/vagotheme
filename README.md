@@ -216,11 +216,11 @@ ggplot(
   aes(
     x = month, 
     y = accidents, 
-    fill = fct_rev(freeway), 
+    fill = forcats::fct_rev(freeway), 
     label = accidents), 
-    colour = fct_rev(freeway)) +
+    colour = forcats::fct_rev(freeway)) +
   geom_col(position = position_stack()) +
-  geom_text(aes(colour= fct_rev(freeway)), position = position_stack(vjust = .5))+
+  geom_text(aes(colour= forcats::fct_rev(freeway)), position = position_stack(vjust = .5))+
   scale_x_discrete(name = NULL)+
   guides(fill = guide_legend(reverse = TRUE)) +
   scale_y_continuous(name = NULL, expand = c(0,0), limits = c(0,131))+
@@ -242,11 +242,11 @@ ggplot(
 ggplot(data=car_accidents, 
        aes(x=month, 
            y = accidents, 
-           fill = fct_rev(freeway), 
+           fill = forcats::fct_rev(freeway), 
            label = accidents), 
-           colour = fct_rev(freeway)) +
+           colour = forcats::fct_rev(freeway)) +
   geom_col(position = position_stack(), colour = "white") +
-  geom_text(aes(colour= fct_rev(freeway)), position = position_stack(vjust = .5))+
+  geom_text(aes(colour= forcats::fct_rev(freeway)), position = position_stack(vjust = .5))+
   scale_x_discrete(name = NULL)+
   guides(fill = guide_legend(reverse = TRUE)) +
   scale_y_continuous(name = NULL, expand = c(0,0),limits = c(0,131))+
@@ -271,9 +271,9 @@ car_accidents =
   mutate(share = accidents/sum(accidents))
 
 ## example of single colour column plot
-ggplot(data=car_accidents,aes(x=month, y = share, fill = fct_rev(freeway), label = scales::percent(share, accuracy = 1))) +
+ggplot(data=car_accidents,aes(x=month, y = share, fill = forcats::fct_rev(freeway), label = scales::percent(share, accuracy = 1))) +
   geom_col(position = position_stack()) +
-  geom_text(aes(colour= fct_rev(freeway)), position = position_stack(vjust = .5))+
+  geom_text(aes(colour= forcats::fct_rev(freeway)), position = position_stack(vjust = .5))+
   guides(fill = guide_legend(reverse = TRUE)) +
   scale_x_discrete(name = NULL)+
   scale_y_continuous(name = NULL, expand = c(0,0), label = scales::label_percent(), limits = c(0,1.01))+
@@ -305,11 +305,11 @@ ggplot(
     x = month, 
     y = share, 
     alpha = forecast,
-    fill = fct_rev(freeway),
+    fill = forcats::fct_rev(freeway),
     label = scales::percent(share, accuracy = 1))) +
   geom_col(position = position_stack()) +
   geom_text(
-    aes(colour= fct_rev(freeway)),
+    aes(colour= forcats::fct_rev(freeway)),
     position = position_stack(vjust = .5))+
   guides(fill = guide_legend(reverse = TRUE)) +
   scale_x_discrete(name = NULL)+
@@ -389,14 +389,14 @@ mode_shares =
 ggplot(
   data = mode_shares, 
   aes(
-    x = fct_rev(mode), 
+    x = forcats::fct_rev(mode), 
     y = trips,
-    fill = factor(council) |> fct_rev(),
+    fill = factor(council) |> forcats::fct_rev(),
     )
   )+
   geom_col() +
   geom_text(
-    aes(label = trips,colour= factor(council) |> fct_rev()), 
+    aes(label = trips,colour= factor(council) |> forcats::fct_rev()), 
     position = position_stack(vjust =.5))+
   # Convert from columb to horizontal bar using coord_flip
   coord_flip()+
@@ -714,7 +714,7 @@ ggplot(
   geom_sf() +
   scale_fill_manual(guide='none',values=vago.blue) +
   theme_vago_map(base_colour = "lilac", base_size = 10)
-#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\Rtmpozi2ke
+#> Reading sa42021 file found in C:\Users\SAMUEL~1\AppData\Local\Temp\Rtmp2Pibwz
 ```
 
 <img src="man/figures/README-map_lilac-1.png" width="700px" height="400px" />

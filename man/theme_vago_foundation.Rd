@@ -7,9 +7,9 @@
 theme_vago_foundation(base_size = 15, base_family = "Noto Sans")
 }
 \arguments{
-\item{base_size}{base font size, given in pts.}
+\item{base_size}{a numeric with default 15}
 
-\item{base_family}{base font family}
+\item{base_family}{a (character) string with default "Noto Sans"}
 }
 \description{
 This theme is designed to be a foundation from which to build new
@@ -20,7 +20,7 @@ than \code{\link[ggplot2]{theme_gray}()} or \code{\link[ggplot2]{theme_bw}()},
 because those themes define elements deep in the hierarchy.
 }
 \details{
-This theme takes \code{\link[ggthemes]{theme_foundations}()} and sets
+This theme takes \code{\link[ggthemes]{theme_foundation}()} and sets
 base text family and size to \verb{Noto Sans} and \code{15}.
 }
 \seealso{

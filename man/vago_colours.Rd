@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{vago_colours}}{
 
-An object of class \code{palette} with 4 palettes.
+An object of class \code{palette} with 5 palettes.
 Use \code{names(vago_colours)} to return all palette names.
 }
 }
@@ -24,8 +24,5 @@ VAGO’s identity.
 \examples{
 # Plot all colours
 barplot(c(2,5,6,7,4,3,1), col=vago_colours$base)
-}
-\seealso{
-\code{\link[=pal_palette]{pal_palette()}}#'
 }
 \keyword{datasets}

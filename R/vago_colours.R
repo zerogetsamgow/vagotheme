@@ -7,7 +7,6 @@
 #' An object of class `palette` with `r length(vago_colours)` palettes.
 #' Use `names(vago_colours)` to return all palette names.
 #' @source <https://github.com/zerogetsamgow/vagotheme>
-#' @seealso [pal_palette()]#'
 #' @examples
 #' # Plot all colours
 #' barplot(c(2,5,6,7,4,3,1), col=vago_colours$base)
@@ -22,7 +21,6 @@
 #' An object of class `colour` with hex value `#054894`.
 #'
 #' @source <https://github.com/zerogetsamgow/vagotheme>
-#' @seealso [pal_colour()]
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.blue,3))
 "vago.blue"
@@ -36,7 +34,6 @@
 #' An object of class `colour` with hex value `#04366F`.
 #'
 #' @source <https://github.com/zerogetsamgow/vagotheme>
-#' @seealso [pal_colour()]
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.darkblue,3))
 "vago.darkblue"
@@ -50,7 +47,6 @@
 #' An object of class `colour` with hex value `#2BB5B6`.
 #'
 #' @source <https://github.com/zerogetsamgow/vagotheme>
-#' @seealso [pal_colour()]
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.teal,3))
 "vago.teal"
@@ -63,6 +59,7 @@
 #' @format ## `vago.lightteal`
 #' An object of class `colour` with hex value `#A3E9E9`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.lightteal,3))
 "vago.lightteal"
@@ -75,6 +72,7 @@
 #' @format ## `vago.darkteal`
 #' An object of class `colour` with hex value `#208888`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.darkteal,3))
 "vago.darkteal"
@@ -86,6 +84,7 @@
 #' @format ## `vago.green`
 #' An object of class `colour` with hex value `#00A86B`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.green,3))
 "vago.green"
@@ -98,6 +97,7 @@
 #' @format ## `vago.cerulean`
 #' An object of class `colour` with hex value `#2F8DF8`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.cerulean,3))
 "vago.cerulean"
@@ -109,6 +109,7 @@
 #' @format ## `vago.purple`
 #' An object of class `colour` with hex value `#2D1A78`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.purple,3))
 "vago.purple"
@@ -120,6 +121,7 @@
 #' @format ## `vago.magenta`
 #' An object of class `colour` with hex value `#930073`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.magenta,3))
 "vago.magenta"
@@ -131,6 +133,7 @@
 #' @format ## `vago.red`
 #' An object of class `colour` with hex value `#D60000`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.red,3))
 "vago.red"
@@ -142,9 +145,22 @@
 #' @format ## `vago.amber`
 #' An object of class `colour` with hex value `#FFC000`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.amber,3))
 "vago.amber"
+
+#' VAGO White
+#'
+#' VAGO white is a background colour.
+
+#' @format ## `vago.white`
+#' An object of class `colour` with hex value `#AAAAAA`.
+#'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
+#' @examples
+#' barplot(c(2,5,3), col=rep(vago.white,3))
+"vago.white"
 
 #' VAGO Lilac
 #'
@@ -153,6 +169,7 @@
 #' @format ## `vago.lilac`
 #' An object of class `colour` with hex value `#E3E3ED`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.lilac,3))
 "vago.lilac"
@@ -164,6 +181,7 @@
 #' @format ## `vago.grey`
 #' An object of class `colour` with hex value `#BFBFBF`.
 #'
+#' @source <https://github.com/zerogetsamgow/vagotheme>
 #' @examples
 #' barplot(c(2,5,3), col=rep(vago.grey,3))
 "vago.grey"

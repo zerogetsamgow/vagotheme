@@ -4,11 +4,12 @@
 \alias{theme_vago_lilac}
 \title{A ggplot2 theme with background colour lilac and text colours to black.}
 \usage{
-theme_vago_lilac(
-  base_colour = vago.lilac,
-  base_size = 15,
-  text_colour = "black"
-)
+theme_vago_lilac(base_size = 15, text_colour = "black")
+}
+\arguments{
+\item{base_size}{a numeric with default 15}
+
+\item{text_colour}{a  string with default "black"}
 }
 \description{
 Colours are sourced from \code{vagotheme} and are vago style guide compliant.

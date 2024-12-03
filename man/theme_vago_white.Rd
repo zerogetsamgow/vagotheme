@@ -4,7 +4,12 @@
 \alias{theme_vago_white}
 \title{A ggplot2 theme with background colour white and text colours to black.}
 \usage{
-theme_vago_white(base_colour = "white", base_size = 15, text_colour = "black")
+theme_vago_white(base_size = 15, text_colour = "black")
+}
+\arguments{
+\item{base_size}{a numeric with default 15}
+
+\item{text_colour}{a (character) string with default "Black"}
 }
 \description{
 Colours are sourced from \code{vagotheme} and are vago style guide compliant.

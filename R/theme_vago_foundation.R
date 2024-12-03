@@ -7,10 +7,13 @@
 #' than \code{\link[ggplot2]{theme_gray}()} or \code{\link[ggplot2]{theme_bw}()},
 #' because those themes define elements deep in the hierarchy.
 #'
-#' This theme takes \code{\link[ggthemes]{theme_foundations}()} and sets
+#' This theme takes \code{\link[ggthemes]{theme_foundation}()} and sets
 #' base text family and size to `Noto Sans` and `15`.
 #'
-#' @inheritParams ggthemes::theme_foundation
+#' @param base_size a numeric with default 15
+#'
+#' @param base_family a (character) string with default "Noto Sans"
+#'
 #'
 #' @family vagotheme
 #' @export
@@ -29,8 +32,6 @@ theme_vago_foundation <- function(base_size = 15, base_family = "Noto Sans") {
       line = ggplot2::element_blank(),
       panel.background = ggplot2::element_blank(),
       panel.border = ggplot2::element_blank(),
-      # Define cube_founcation text parameters
-      # Define cube_founcation text parameters
       text =
         ggplot2::element_text(
           family=base_family

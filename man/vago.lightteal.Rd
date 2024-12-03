@@ -10,6 +10,9 @@
 An object of class \code{colour} with hex value \verb{#A3E9E9}.
 }
 }
+\source{
+\url{https://github.com/zerogetsamgow/vagotheme}
+}
 \usage{
 vago.lightteal
 }

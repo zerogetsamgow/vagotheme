@@ -11,9 +11,11 @@ theme_vago_map(
 )
 }
 \arguments{
-\item{base_size}{base font size, given in pts.}
+\item{base_colour}{a (character) string with options of "white" and "lilac"}
 
-\item{base_family}{base font family}
+\item{base_size}{a numeric with default 15}
+
+\item{base_family}{a (character) string with default "Noto Sans"}
 }
 \description{
 This theme is designed to be be used when creating maps.

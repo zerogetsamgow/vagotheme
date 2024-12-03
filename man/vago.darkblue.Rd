@@ -23,7 +23,4 @@ VAGO Dark blue is a chart colour.
 \examples{
 barplot(c(2,5,3), col=rep(vago.darkblue,3))
 }
-\seealso{
-\code{\link[=pal_colour]{pal_colour()}}
-}
 \keyword{datasets}

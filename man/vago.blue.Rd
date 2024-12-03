@@ -23,7 +23,4 @@ VAGO Blue is a base and theme colour.
 \examples{
 barplot(c(2,5,3), col=rep(vago.blue,3))
 }
-\seealso{
-\code{\link[=pal_colour]{pal_colour()}}
-}
 \keyword{datasets}

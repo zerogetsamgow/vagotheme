@@ -4,7 +4,7 @@
 \alias{install_vago_fonts}
 \title{Install VAGO Fonts}
 \usage{
-install_vago_fonts(font.path = "C:/windows/fonts")
+install_vago_fonts()
 }
 \description{
 Themes in this package use the Segoe UI font.

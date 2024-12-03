@@ -13,16 +13,14 @@ URL: https://github.com/zerogetsamgow/vagotheme
 BugReports: https://github.com/zerogetsamgow/vagotheme/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
-Imports: 
+Imports:  
     curl,
     ggplot2,
     ggthemes,
-    palettes,
-    scales,
     showtext,
-    strayr,
     sysfonts
+    
